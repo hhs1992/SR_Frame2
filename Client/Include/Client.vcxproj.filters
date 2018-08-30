@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00. MainApp">
+      <UniqueIdentifier>{748ddc5f-438b-45b6-9cec-03323eaffcb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Default">
+      <UniqueIdentifier>{7133bfba-cd1f-42b5-8c53-f237ef70303c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Headers">
+      <UniqueIdentifier>{4beebf93-5513-4ef0-af6a-894bbb619b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Default\리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="99. Default\소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="99. Default\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="98. Headers\00. stdafx">
+      <UniqueIdentifier>{8af5195d-4481-4131-baa3-6657de3b91a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Headers\01. Headers">
+      <UniqueIdentifier>{a01e4c39-129d-4c16-9d2e-84a86c5b6236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Scene">
+      <UniqueIdentifier>{1c32e358-f0a2-45f8-bafc-dcfc8fe11795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Scene\01. Stage">
+      <UniqueIdentifier>{c40e4f6d-340c-43b7-aad7-6055e9b84fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Scene\00. Logo">
+      <UniqueIdentifier>{7b095c89-b4e7-462b-a80f-564ccf4e6684}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>99. Default\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>98. Headers\00. stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\enum.h">
+      <Filter>98. Headers\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\include.h">
+      <Filter>98. Headers\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\value.h">
+      <Filter>98. Headers\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MainApp.h">
+      <Filter>00. MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Logo.h">
+      <Filter>01. Scene\00. Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Stage.h">
+      <Filter>01. Scene\01. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\SceneSelector.h">
+      <Filter>01. Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99. Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>99. Default\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Headers\MainApp.cpp">
+      <Filter>00. MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Logo.cpp">
+      <Filter>01. Scene\00. Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Stage.cpp">
+      <Filter>01. Scene\01. Stage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>99. Default\리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>99. Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Client.ico">
+      <Filter>99. Default\리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99. Default</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
