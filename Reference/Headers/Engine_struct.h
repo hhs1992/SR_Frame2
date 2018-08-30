@@ -28,6 +28,15 @@ namespace Engine
 	{
 		WORD				_1, _2, _3;
 	} INDEX32;
+
+	typedef struct tagInfo
+	{
+		D3DXVECTOR3		vPos;
+		D3DXVECTOR3		vDir;
+		D3DXVECTOR3		vLook;
+
+		D3DXMATRIX		matWorld;
+	} INFO;
 }
 
 

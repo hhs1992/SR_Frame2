@@ -20,7 +20,7 @@ public:
 private:
 	virtual void				Release();
 
-private:
+protected:
 	LPDIRECT3DDEVICE9			m_pGraphicDev = nullptr;
 };
 

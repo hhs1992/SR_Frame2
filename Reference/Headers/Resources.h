@@ -13,7 +13,8 @@ public:
 	virtual		~CResources();
 
 public:
-	void		Release();
+	void			Release();
+	virtual void	Render();
 
 protected:
 	LPDIRECT3DDEVICE9			m_pGraphicDev = nullptr;

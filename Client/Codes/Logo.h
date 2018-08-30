@@ -9,6 +9,7 @@ namespace Engine
 	class CRcCol;
 }
 
+class CPlayer;
 class CLogo
 	: public Engine::CScene
 {
@@ -29,6 +30,7 @@ private:
 private:
 	Engine::CManagement*		m_pManagement = nullptr;
 	Engine::CRcCol*				m_pRcCol = nullptr;
+	CPlayer*					m_pPlayer = nullptr;
 
 public:
 	static CLogo*		Create(LPDIRECT3DDEVICE9 pGraphicDev);

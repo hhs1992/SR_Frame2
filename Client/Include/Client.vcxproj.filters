@@ -37,6 +37,12 @@
     <Filter Include="01. Scene\00. Logo">
       <UniqueIdentifier>{7b095c89-b4e7-462b-a80f-564ccf4e6684}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. GameObject">
+      <UniqueIdentifier>{5c873b2a-dfeb-441f-9af3-cce73b00154d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObject\00. Player">
+      <UniqueIdentifier>{4f606208-4be8-4d39-bb1c-8c759ab14f81}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -72,6 +78,9 @@
     <ClInclude Include="..\Codes\SceneSelector.h">
       <Filter>01. Scene</Filter>
     </ClInclude>
+    <ClInclude Include="..\Codes\Player.h">
+      <Filter>02. GameObject\00. Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -88,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="..\Codes\Stage.cpp">
       <Filter>01. Scene\01. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Player.cpp">
+      <Filter>02. GameObject\00. Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

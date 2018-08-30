@@ -41,15 +41,30 @@ HRESULT Engine::CResourcesMgr::AddBuffer(LPDIRECT3DDEVICE9 pGraphicDev, RESOURCE
 		break;
 	}
 
+	NULL_CHECK_RETURN(pResource, E_FAIL);
+
+	m_mapResources[eResourceType].emplace(wstrResourceKey, pResource);
+
 	return S_OK;
 }
 
 void Engine::CResourcesMgr::Render(const wstring & wstrResourceKey)
 {
+	auto iter = m_mapResources[0].find(wstrResourceKey);
+
+	if (iter == m_mapResources[0].end())
+		return;
+
+	iter->second->Render();
 }
 
 void Engine::CResourcesMgr::Release()
 {
+	for (size_t i = 0; i < RESOURCE_END; ++i)
+	{
+		for_each(m_mapResources[i].begin(), m_mapResources[i].end(), CDeleteMap());
+		m_mapResources[i].clear();
+	}
 }
 
 

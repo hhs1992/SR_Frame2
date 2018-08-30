@@ -5,6 +5,9 @@
 
 #include "TriCol.h"
 #include "RcCol.h"
+#include "RcTex.h"
+
+#include "Texture.h"
 
 BEGIN(Engine)
 

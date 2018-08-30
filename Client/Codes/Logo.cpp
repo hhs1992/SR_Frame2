@@ -6,6 +6,8 @@
 #include "SceneSelector.h"
 #include "RcCol.h"
 
+#include "Player.h"
+
 CLogo::CLogo(LPDIRECT3DDEVICE9 pGraphicDev)
 	: Engine::CScene(pGraphicDev)
 	, m_pManagement(Engine::Get_Management())
@@ -19,19 +21,26 @@ CLogo::~CLogo()
 
 void CLogo::Update()
 {
+	m_pPlayer->Update();
 }
 
 void CLogo::Render()
 {
+	m_pPlayer->Render();
 }
 
 HRESULT CLogo::Initialize()
 {
+
+	m_pPlayer = CPlayer::Create(m_pGraphicDev);
+	NULL_CHECK_RETURN(m_pPlayer, E_FAIL);
+
 	return S_OK;
 }
 
 void CLogo::Release()
 {
+	Engine::Safe_Delete(m_pPlayer);
 	Engine::Safe_Delete(m_pRcCol);
 }
 

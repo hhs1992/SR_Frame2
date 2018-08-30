@@ -15,3 +15,7 @@ Engine::CResources::~CResources()
 void Engine::CResources::Release()
 {
 }
+
+void Engine::CResources::Render()
+{
+}
