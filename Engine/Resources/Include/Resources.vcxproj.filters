@@ -22,6 +22,9 @@
     <Filter Include="01. Resources\01. VIBuffer\01. RcCol">
       <UniqueIdentifier>{450d5c39-b4a6-4af3-ae9a-2d121bb75756}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01. Resources\02. RcTex">
+      <UniqueIdentifier>{f87d193a-cd97-4f65-94f3-8e20dffb203b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Codes\ResourcesMgr.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="..\Codes\VIBuffer.cpp">
       <Filter>01. Resources\01. VIBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\RcTex.cpp">
+      <Filter>01. Resources\02. RcTex</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Headers\Export_Resources.h">
       <Filter>99. Export</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\RcTex.h">
+      <Filter>01. Resources\02. RcTex</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
