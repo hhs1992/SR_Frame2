@@ -5,10 +5,10 @@
 #include "Logo.h"
 #include "Stage.h"
 
-class CSsceneSelector
+class CSceneSelector
 {
 public:
-	CSsceneSelector(SCENEID eScene)
+	CSceneSelector(SCENEID eScene)
 		: m_eScene(eScene) {}
 
 public:

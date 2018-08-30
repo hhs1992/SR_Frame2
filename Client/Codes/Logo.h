@@ -3,10 +3,8 @@
 
 #include "Scene.h"
 
-namespace Engine
-{
+namespace Engine {
 	class CManagement;
-	class CRcCol;
 }
 
 class CPlayer;
@@ -28,9 +26,8 @@ private:
 	virtual void		Release();
 
 private:
-	Engine::CManagement*		m_pManagement = nullptr;
-	Engine::CRcCol*				m_pRcCol = nullptr;
-	CPlayer*					m_pPlayer = nullptr;
+	Engine::CManagement*			m_pManagement = nullptr;
+	CPlayer*						m_pPlayer = nullptr;
 
 public:
 	static CLogo*		Create(LPDIRECT3DDEVICE9 pGraphicDev);

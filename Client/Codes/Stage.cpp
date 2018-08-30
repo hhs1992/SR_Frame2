@@ -17,6 +17,7 @@ void CStage::Update()
 
 void CStage::Render()
 {
+	int a = 0;
 }
 
 HRESULT CStage::Initialize()

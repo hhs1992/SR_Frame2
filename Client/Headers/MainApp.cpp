@@ -37,7 +37,7 @@ HRESULT CMainApp::Initialize()
 	FAILED_CHECK(m_pManagement->Initialize(m_pGraphicDev));
 
 	// SceneSelect
-	FAILED_CHECK(m_pManagement->SceneChange(CSsceneSelector(SC_LOGO)));
+	FAILED_CHECK(m_pManagement->SceneChange(CSceneSelector(SC_LOGO)));
 
 
 	return S_OK;

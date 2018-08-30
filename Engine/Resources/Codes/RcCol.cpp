@@ -18,7 +18,7 @@ HRESULT CRcCol::Initialize()
 	m_dwVtxFVF = VTXFVF_COL;
 	m_dwVtxSize = sizeof(VTXCOL);
 	m_dwIdxSize = sizeof(INDEX32);
-	m_idxFmt = D3DFMT_INDEX32;
+	m_IdxFmt = D3DFMT_INDEX32;
 
 	FAILED_CHECK(CreateBuffer());
 

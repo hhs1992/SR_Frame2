@@ -36,7 +36,7 @@ protected:
 	DWORD						m_dwTriCnt = 0;
 	DWORD						m_dwVtxFVF = 0;
 	DWORD						m_dwIdxSize = 0;
-	D3DFORMAT					m_idxFmt;
+	D3DFORMAT					m_IdxFmt;
 };
 
 END

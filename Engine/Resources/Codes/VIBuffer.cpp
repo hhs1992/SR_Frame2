@@ -25,7 +25,7 @@ HRESULT Engine::CVIBuffer::CreateBuffer()
 	m_pGraphicDev->CreateIndexBuffer(
 		m_dwIdxSize * m_dwTriCnt,
 		0,
-		m_idxFmt,
+		m_IdxFmt,
 		D3DPOOL_MANAGED,
 		&m_pIB,
 		NULL);
